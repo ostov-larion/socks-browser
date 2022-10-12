@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Socks browser</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  <nav>
+      local://<input type="url" list="urls" autocomplete="urls" placeholder="example.p2p/index.md" onchange="openURL(this.value)" id="locbar"></input>
+      <span id="log-status"></span>
+      <datalist id="urls"></datalist>
+  </nav>
+  <main>
+    <h1>Socks Browser</h1>
+    <p>Beatiful browser for stockings network.</p>
+    <h2>Your archives:</h2>
+    <p id="archives-list"></p>
+  </main>
+  </body>
+  <script src="js/markdown-it.js"></script>
+  <script src="js/markdown-it-media.js"></script>
+  <script src="js/context.js"></script>
+  <script src="js/neutralino.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    renderArchivesList()
+  </script>
+</html>

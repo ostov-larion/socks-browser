@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Noto Emoji';
+    src: url(../fonts/NotoEmoji-Regular.ttf);
+}
+
+* {
+    outline: none;
+}
+
+body {
+    background-color: #333;
+    color: #eee;
+    font-family: monospace, 'Noto Emoji';
+    font-size: large;
+    line-height: 1.5em;
+}
+
+main {
+    margin-left:  15%;
+    margin-right: 15%;
+}
+
+/*
+h1, h2, h3, h4, h5, h6, code, p, mark, ul:not(.context), hr, blockquote, img, button {
+    animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 300ms;
+}
+*/
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+h1 {
+    line-height: 1.1em;
+}
+
+mark {
+    background-color: #eee;
+    color: #555;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+mark::selection {
+    background-color: #333;
+    color: #eee;
+}
+
+::selection {
+    background-color: #eee;
+    color: #555;
+}
+
+hr {
+    border-bottom-width: 4px;
+}
+
+ul {
+    list-style-type: "❖ ";
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+blockquote {
+    border-left: 3px solid #eee;
+    padding-left: 1rem;
+  	margin-inline-start: 0px;
+    margin: auto;
+}
+
+/*blockquote::before {
+    content: "❝";
+    color: #eee;
+    font-size: xxx-large;
+    position: relative;
+    left: -1rem;
+}*/
+
+code {
+    background-color: #222;
+    border-radius: 4px;
+    font-size: medium;
+    overflow-x: auto;
+}
+
+pre > code {
+    display: block;
+    padding: .5rem;
+    line-height: 1.25;
+}
+
+dialog {
+    background-color: #555;
+    color: #eee;
+    border: none;
+    border-radius: 4px;
+    width: 50%;
+}
+
+::backdrop {
+    filter: blur(0.5);
+}
+
+dialog > div > span > button {
+    background-color: #555;
+    font-size: medium;
+}
+
+button {
+    background-color: #333;
+    color: #eee;
+    font-family: monospace, 'Noto Emoji';
+    font-size: large;
+    text-decoration: none;
+    transition: all 500ms;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #eee;
+    border-color: #fff;
+}
+
+ul.context {
+    color: #333;
+    border-radius: 4px;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+    transition: all 500ms;
+    border-bottom: 2px solid #aaa;
+}
+
+a:hover {
+    color: #eee;
+    border-color: #fff;
+}
+
+a:visited {
+    color: #eee;
+    border-color: #aaa;
+    border-bottom-style: dashed;
+}
+
+a:visited:hover {
+  color: #eee;
+  border-color: #fff;
+}
+
+::-webkit-scrollbar{
+  width: 3px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #eeeee666;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-track{
+  background: #333;
+}
+
+audio::-webkit-media-controls-panel {
+  border-radius: 4px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    background-color: #333;
+    color: #eee;
+    width: 80%;
+    font-size: large;
+    font-family: monospace;
+}
+
+input[type=url] {
+    background-color: #333;
+    color: #eee;
+    width: 80%;
+    font-size: large;
+    font-family: monospace;
+    border: none;
+}
+
+div.error {
+    border: 2px solid lightcoral;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 30%;
+}
+
+div.error.inline {
+    margin-top: 0;
+}

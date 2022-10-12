@@ -1,0 +1,66 @@
+{
+  "applicationId": "stockings.client.socks",
+  "version": "1.0.0",
+  "defaultMode": "chrome",
+  "port": 8080,
+  "documentRoot": "/resources/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "logging": {
+    "enabled": true,
+    "writeToLogFile": true
+  },
+  "nativeAllowList": [
+    "app.*",
+    "os.*",
+    "filesystem.*",
+    "debug.log"
+  ],
+  "modes": {
+    "window": {
+      "title": "Socks browser",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "fullScreen": false,
+      "alwaysOnTop": false,
+      "icon": "/resources/icons/appIcon.png",
+      "enableInspector": false,
+      "borderless": false,
+      "maximize": false,
+      "hidden": false,
+      "resizable": true,
+      "exitProcessOnClose": true
+    },
+    "browser": {
+      "nativeAllowList": [
+        "app.*",
+        "os.*",
+        "filesystem.*",
+        "debug.log"
+      ]
+    },
+    "cloud": {
+      "url": "/resources/#cloud",
+      "nativeAllowList": [
+        "app.*"
+      ]
+    },
+    "chrome": {
+      "width": 800,
+      "height": 500,
+      "args": "--user-agent=\"Neutralinojs chrome mode\""
+    }
+  },
+  "cli": {
+    "binaryName": "socks",
+    "resourcesPath": "/resources/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/resources/js/neutralino.js",
+    "binaryVersion": "4.7.0",
+    "clientVersion": "3.6.0"
+  }
+}
